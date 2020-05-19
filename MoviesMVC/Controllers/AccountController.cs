@@ -9,8 +9,9 @@ namespace MoviesMVC.Controllers
     {
         private readonly UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
+        
         public AccountController(UserManager<IdentityUser> userManager, 
-        SignInManager<IdentityUser> signInManager)
+            SignInManager<IdentityUser> signInManager)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
